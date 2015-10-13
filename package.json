@@ -1,0 +1,25 @@
+{
+  "name": "mindwave",
+  "version": "2.0.0",
+  "author": {
+    "email": "konsumer@jetboystudio.com",
+    "name": "David Konsumer"
+  },
+  "dependencies": {
+    "buffy": "0.0.5",
+    "serialport": "^2.0.0"
+  },
+  "description": "A cross-platform driver for bluetooth Neurosky Mindwave headsets",
+  "keywords": [
+    "brainwave",
+    "mindwave",
+    "neurosky"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elsehow/mindwave.git"
+  },
+  "version": "0.0.4"
+}
