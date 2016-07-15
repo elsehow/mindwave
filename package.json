@@ -1,13 +1,13 @@
 {
   "name": "mindwave2",
-  "version": "2.0.0",
+  "version": "0.0.4",
   "author": {
     "email": "konsumer@jetboystudio.com",
     "name": "David Konsumer"
   },
   "dependencies": {
     "buffy": "0.0.5",
-    "serialport": "^2.0.0"
+    "serialport": "^4.0.1"
   },
   "description": "A cross-platform driver for bluetooth Neurosky Mindwave headsets",
   "keywords": [
@@ -20,6 +20,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/elsehow/mindwave.git"
-  },
-  "version": "0.0.4"
+  }
 }
