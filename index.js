@@ -1,7 +1,6 @@
 var EventEmitter = require('events').EventEmitter;
-var serialPort = require('serialport');
+var SerialPort = require('serialport');
 var buffy = require('buffy');
-var SerialPort = serialPort.SerialPort;
 
 var Mindwave = module.exports = function(){
 	EventEmitter.call(this);
