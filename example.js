@@ -22,16 +22,17 @@ function asProp (ev) {
   return kefir.fromEvents(mw, ev).map(prop(ev))
 }
 
-var waveS = kefir.fromEvents(mw, 'wave').bufferWithCount(512).map(prop('wave'))
+var waveS = kefir.fromEvents(mw, 'wave').bufferWithCount(256).map(prop('wave'))
 
-var outS = kefir.combine([
+var outS = kefir.zip([
   asProp('eeg'),
   asProp('signal'),
   asProp('meditation'),
   asProp('attention'),
-  waveS,
+  //waveS,
 ]).map(toObj)
 
 console.log('connecting')
 mw.connect('/dev/cu.MindWaveMobile-DevA');
+
 outS.log()
