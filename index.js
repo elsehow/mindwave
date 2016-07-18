@@ -22,7 +22,10 @@ Mindwave.prototype.connect = function(port, baud){
 	// TODO: switch baud code if 57600 for higher res data
 	// http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#thinkgear_command_bytes
 
-	self.serialPort = new SerialPort(self.port, {baudrate: self.baud}, false);
+	self.serialPort = new SerialPort(self.port, {
+    baudrate: self.baud,
+    autoOpen: false,
+  });
 	self.serialPort.open(function(){
 		self.emit('connect');
 		self.serialPort.on('data', function(data){

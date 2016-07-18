@@ -1,6 +1,6 @@
 {
   "name": "mindwave2",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": {
     "email": "konsumer@jetboystudio.com",
     "name": "David Konsumer"
@@ -20,5 +20,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/elsehow/mindwave.git"
+  },
+  "devDependencies": {
+    "kefir": "^3.3.0"
   }
 }
