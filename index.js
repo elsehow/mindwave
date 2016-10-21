@@ -91,7 +91,6 @@ Mindwave.prototype.parsePacket = function(data) {
         break;
 
       case CODE_WAVE:
-        reader.skip(1);
         this.emit('wave', reader.int16BE());
         break;
 

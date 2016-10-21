@@ -22,6 +22,7 @@
     "url": "https://github.com/elsehow/mindwave.git"
   },
   "devDependencies": {
+    "fft-js": "0.0.9",
     "kefir": "^3.3.0"
   }
 }
