@@ -1,3 +1,5 @@
+# this is a fork that upgrades the serialport version
+
 # mindwave
 A cross-platform driver for bluetooth Neurosky Mindwave headsets.
 
