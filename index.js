@@ -92,7 +92,7 @@ Mindwave.prototype.parsePacket = function(data) {
 
       case CODE_WAVE:
         var b = reader.buffer(3);
-        var raw = b[1]*256 + b[2];
+        var raw = b[1] * 256 + b[2];
         if(raw >= 32768) {
           raw = raw - 65536;
         }
