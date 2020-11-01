@@ -91,7 +91,8 @@ Mindwave.prototype.parsePacket = function(data) {
         break;
 
       case CODE_WAVE:
-        this.emit('wave', reader.int16BE());
+        var b = reader.buffer(3);
+        this.emit('wave', (b[1] << 8) | b[2]);
         break;
 
       case CODE_ASIC_EEG:
