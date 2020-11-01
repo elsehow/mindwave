@@ -91,6 +91,8 @@ Mindwave.prototype.parsePacket = function(data) {
         break;
 
       case CODE_WAVE:
+        // Calculation method taken from:
+        // http://developer.neurosky.com/docs/doku.php?id=thinkgear_communications_protocol#raw_wave_value_16-bit
         var b = reader.buffer(3);
         var raw = b[1] * 256 + b[2];
         if(raw >= 32768) {
