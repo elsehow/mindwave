@@ -1,4 +1,10 @@
-# this is a fork that upgrades the serialport version
+# THIS MODULE IS DEPRECATED. 
+
+Please use [mindwave](https://www.npmjs.com/package/mindwave). 
+
+Documentation below is for archival purposes *only*.
+
+---
 
 # mindwave
 A cross-platform driver for bluetooth Neurosky Mindwave headsets.
